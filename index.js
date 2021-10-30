@@ -33,7 +33,6 @@ async function doAction(contract) {
 
         const result = await contract.buy(
             '250000000',
-            ethers.utils.parseEther('1000'),
             {
                 gasLimit,
                 gasPrice: config.gasPrices[config.gasPrice]
